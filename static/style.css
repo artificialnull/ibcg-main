@@ -1,0 +1,47 @@
+* {
+    font-family: Helvetica, sans-serif !important;
+    font-weight: 800 !important
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background: black;
+}
+
+.sidebar {
+    height: 100vh;
+    float: left;
+}
+
+.content {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none !important;
+}
+
+.image-header {
+    height: 30vh;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        height: inherit;
+    }
+
+    .sidebar div.row {
+        margin-bottom: 0px !important;
+    }
+
+    .content {
+        max-height: inherit;
+        height: inherit;
+    }
+
+    .image-header {
+        height: inherit;
+    }
+}
